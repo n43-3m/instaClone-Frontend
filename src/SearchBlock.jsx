@@ -2,18 +2,16 @@ import CrossIcon from "./Icons/CrossIcon";
 import TextLogo from "./Icons/TextLogo";
 import SearchResult from "./SearchResult";
 
-export default function SearchBlock({searchOpen,setSearchOpen}) {
+export default function SearchBlock({ searchOpen, setSearchOpen }) {
   return (
-    // modal wrapper 
+    // modal wrapper
     <div className="flex justify-start lg:flex-row fixed top-0 sm:left-[75px] w-full z-10 ">
-        {/* search blck wrapper  */}
+      {/* search blck wrapper  */}
       <div className="w-3/4 lg:w-[400px] h-screen border-r border-white/20 bg-black shadow-lg shadow-white/50">
-          {/* header block  */}
+        {/* header block  */}
         <div className=" border-b border-white/20 text-white">
           <div className="pt-3  pb-8 pl-6 pr-4 my-2">
-            <div className=" text-2xl font-bold hidden sm:block">
-              Search
-            </div>
+            <div className=" text-2xl font-bold hidden sm:block">Search</div>
             <div className="sm:hidden block">
               <TextLogo />
             </div>
@@ -40,7 +38,10 @@ export default function SearchBlock({searchOpen,setSearchOpen}) {
           <SearchResult />
         </div>
       </div>
-      <div className="w-1/4 md:w-full" onClick={()=> setSearchOpen(!searchOpen)}/>
+      <div
+        className="w-1/4 md:w-full"
+        onClick={() => setSearchOpen(!searchOpen)}
+      />
     </div>
   );
 }

@@ -7,7 +7,7 @@ import { useState } from "react";
 import ProfileModal from "./ProfileModal";
 
 export default function ContentCard() {
-  const [showProfileModal,setProfileModal] = useState(false)
+  const [showProfileModal, setProfileModal] = useState(false);
   return (
     <div className="w-full sm:w-[470px] text-white">
       {/* header */}
@@ -19,9 +19,11 @@ export default function ContentCard() {
             alt="profile picture"
             className="h-12 w-12"
           />
-          <span onMouseEnter={()=>setProfileModal(true)}>
+          <span onMouseEnter={() => setProfileModal(true)}>
             <a href="#">user name</a>
-            {showProfileModal && <ProfileModal setProfileModal={setProfileModal}/>}
+            {showProfileModal && (
+              <ProfileModal setProfileModal={setProfileModal} />
+            )}
           </span>
           <span>.</span>
           <span>13h</span>
@@ -53,7 +55,6 @@ export default function ContentCard() {
 
       {/* info section  */}
       <div className="flex flex-col justify-start gap-2 border-b border-white/20 pb-4 mb-2">
-
         {/* likes */}
         <div>
           <a href="#">71 likes</a>
@@ -70,7 +71,6 @@ export default function ContentCard() {
         <span>
           <a href="#">View all N comments</a>
         </span>
-        
       </div>
     </div>
   );

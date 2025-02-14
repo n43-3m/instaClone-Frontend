@@ -7,7 +7,6 @@ export default function ContentHolder() {
     <div className="w-full flex justify-center items-center ">
       {/* <HomeFeedContent /> */}
       <ProfilePage />
-
     </div>
   );
 }

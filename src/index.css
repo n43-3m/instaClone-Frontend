@@ -2,58 +2,53 @@
 @tailwind components;
 @tailwind utilities;
 
-body{
-    background-color: black;
+body {
+  background-color: black;
 }
 
-
-.gradientStroke{
-    border-width: 3px;
-    border-color: linear-gradient(
-        to right,
-        #833ab4,#fd1d1d,#fcb045
-      );
-    /* border-color: green; */
-    border-style: solid;
+.gradientStroke {
+  border-width: 3px;
+  border-color: linear-gradient(to right, #833ab4, #fd1d1d, #fcb045);
+  /* border-color: green; */
+  border-style: solid;
 }
-
 
 @font-face {
-    font-family: 'Instagram Sans';
-    font-style: normal;
-    font-weight: normal;
-    src: local('Instagram Sans Regular'), url('Instagram Sans.woff') format('woff');
-    }
-    
-    
+  font-family: "Instagram Sans";
+  font-style: normal;
+  font-weight: normal;
+  src: local("Instagram Sans Regular"),
+    url("Instagram Sans.woff") format("woff");
+}
 
-    @font-face {
-    font-family: 'Instagram Sans';
-    font-style: normal;
-    font-weight: 300;
-    src: local('Instagram Sans Light'), url('Instagram Sans Light.woff') format('woff');
-    }
-    
+@font-face {
+  font-family: "Instagram Sans";
+  font-style: normal;
+  font-weight: 300;
+  src: local("Instagram Sans Light"),
+    url("Instagram Sans Light.woff") format("woff");
+}
 
-    @font-face {
-    font-family: 'Instagram Sans';
-    font-style: normal;
-    font-weight: 500;
-    src: local('Instagram Sans Medium'), url('Instagram Sans Medium.woff') format('woff');
-    }
-    
+@font-face {
+  font-family: "Instagram Sans";
+  font-style: normal;
+  font-weight: 500;
+  src: local("Instagram Sans Medium"),
+    url("Instagram Sans Medium.woff") format("woff");
+}
 
-    @font-face {
-    font-family: 'Instagram Sans';
-    font-style: normal;
-    font-weight: 700;
-    src: local('Instagram Sans Bold'), url('Instagram Sans Bold.woff') format('woff');
-    }
-    
+@font-face {
+  font-family: "Instagram Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Instagram Sans Bold"),
+    url("Instagram Sans Bold.woff") format("woff");
+}
 
-    @font-face {
-    font-family: 'Instagram Sans Headline';
-    font-style: normal;
-    font-weight: 400;
-    src: local('Instagram Sans Headline Regular'), url('Instagram Sans Headline.woff') format('woff');
-    }
+@font-face {
+  font-family: "Instagram Sans Headline";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Instagram Sans Headline Regular"),
+    url("Instagram Sans Headline.woff") format("woff");
+}

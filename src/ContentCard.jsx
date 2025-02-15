@@ -9,7 +9,8 @@ import ProfileModal from "./ProfileModal";
 export default function ContentCard() {
   const [showProfileModal, setProfileModal] = useState(false);
   return (
-    <div className="w-full sm:w-[470px] text-white">
+    // <div className="w-full sm:w-[470px] text-white">
+    <div className="w-screen sm:w-[470px] md:w-[500px] lg:w-[600px] px-1 text-white">
       {/* header */}
       <div className="flex justify-between items-center py-2">
         {/* left side */}

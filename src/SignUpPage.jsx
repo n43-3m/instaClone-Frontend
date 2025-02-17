@@ -32,7 +32,9 @@ export default function SignUpPage() {
             className="border border-white/20 px-2 bg-transparent py-2 rounded-md w-full mb-5"
           />
           {/* <input type="submit"  />  */}
-          <button type="submit" className="w-full rounded-lg py-2 mb-5 gradientStroke">Create account</button>
+          <div className="flex items-center justify-center">
+          <button type="submit" className=" rounded-lg font-semibold py-2 px-3 mb-5 bg-gradient-to-r from-[#833ab4] via-[#fd1d1d] to-[#fcb045]">Create account</button>
+          </div>
           
         </form>
 

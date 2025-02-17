@@ -4,6 +4,7 @@ import SideBar from "./SideBar";
 import SearchBlock from "./SearchBlock";
 import NewPostModal from "./NewPostModal";
 import SignUpPage from "./SignUpPage";
+import LogInPage from "./LogInPage";
 
 export default function App() {
   const [searchOpen, setSearchOpen] = useState(false);
@@ -21,6 +22,7 @@ export default function App() {
     //     <NewPostModal createPost={createPost} setCreatePost={setCreatePost} />
     //   )}
     // </div>
-    <SignUpPage />
+    // <SignUpPage />
+    <LogInPage />
   );
 }

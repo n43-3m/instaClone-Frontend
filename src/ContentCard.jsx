@@ -5,6 +5,7 @@ import ShareIcon from "./Icons/ShareIcon";
 import BookMarkIcon from "./Icons/BookMarkIcon";
 import { useState } from "react";
 import ProfileModal from "./ProfileModal";
+import { Link } from "react-router";
 
 export default function ContentCard() {
   const [showProfileModal, setProfileModal] = useState(false);
@@ -21,7 +22,7 @@ export default function ContentCard() {
             className="h-12 w-12"
           />
           <span onMouseEnter={() => setProfileModal(true)}>
-            <a href="#">user name</a>
+            <Link to="/profile/:id">user name</Link>
             {showProfileModal && (
               <ProfileModal setProfileModal={setProfileModal} />
             )}
@@ -58,19 +59,19 @@ export default function ContentCard() {
       <div className="flex flex-col justify-start gap-2 border-b border-white/20 pb-4 mb-2">
         {/* likes */}
         <div>
-          <a href="#">71 likes</a>
+          <Link to="#">71 likes</Link>
         </div>
 
         {/* cptn  */}
         <div>
           <p>
-            <a href="#">user name</a> ``cptn of the post here{" "}
+            <Link to="#">user name</Link> ``cptn of the post here{" "}
           </p>
         </div>
 
         {/* comment  */}
         <span>
-          <a href="#">View all N comments</a>
+          <Link to="#">View all N comments</Link>
         </span>
       </div>
     </div>

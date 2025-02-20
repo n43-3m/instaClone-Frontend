@@ -1,7 +1,11 @@
-export default function ProfileModal({setProfileModal}) {
+import { Link } from "react-router";
+
+export default function ProfileModal({ setProfileModal }) {
   return (
-    <div className=" absolute w-[336px] h-[336px] bg-black shadow-xl shadow-white/30 rounded-lg border border-white/30 md:block hidden"
-    onMouseLeave={()=>setProfileModal(false)}>
+    <div
+      className=" absolute w-[336px] h-[336px] bg-black shadow-xl shadow-white/30 rounded-lg border border-white/30 md:block hidden"
+      onMouseLeave={() => setProfileModal(false)}
+    >
       {/* header  */}
       <div className="flex items-center gap-4 py-6 px-3">
         <img
@@ -12,7 +16,7 @@ export default function ProfileModal({setProfileModal}) {
         {/* username wrapper  */}
         <div className="flex flex-col items-start  font-bold">
           <span>
-            <a href="#">user name</a>
+            <Link to="/profile/:id">user name</Link>
           </span>
           <span className="font-thin text-sm">bio/details</span>
         </div>

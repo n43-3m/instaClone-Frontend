@@ -1,3 +1,5 @@
+import { Link } from "react-router";
+
 export default function LogInPage() {
   return (
     <div className="flex justify-center items-center w-screen h-screen p-3">
@@ -30,9 +32,9 @@ export default function LogInPage() {
         <div>
           <p className="text-center">
             Don't' have an account?{" "}
-            <a href="/login" className="font-bold hover:underline">
+            <Link to="/login" className="font-bold hover:underline">
               Sign Up
-            </a>
+            </Link>
           </p>
         </div>
       </div>
